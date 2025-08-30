@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 /* General Styles */
-body { font-family: 'Poppins', sans-serif; }
+body { font-family: 'Poppins', sans-serif; margin:0; padding:0; }
 
 /* Hero Section */
 .hero {
@@ -53,7 +53,12 @@ body { font-family: 'Poppins', sans-serif; }
 .menu-item img { height: 200px; object-fit: cover; transition: transform 0.3s; }
 .menu-item .card { transition: all 0.3s ease; cursor: pointer; }
 .menu-item .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.2); margin-top: -5px; }
-.menu-item .card-title { display: flex; justify-content: space-between; align-items: center; }
+.menu-item .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* space between title and icon */
+}
 
 /* Reservation Form */
 #contact .btn i { margin-left: 8px; }
@@ -71,6 +76,7 @@ body { font-family: 'Poppins', sans-serif; }
 </style>
 </head>
 <body>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 <div class="container">
@@ -112,6 +118,7 @@ Order Now <i class="fas fa-utensils"></i>
 <div class="container">
 <h2 class="text-center mb-4 fade-up fade-up-1">Our Menu</h2>
 <div class="row g-4">
+<!-- Card 1 -->
 <div class="col-md-4 menu-item fade-up fade-up-2">
 <div class="card">
 <img class="card-img-top" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Pasta Image">
@@ -121,6 +128,7 @@ Order Now <i class="fas fa-utensils"></i>
 </div>
 </div>
 </div>
+<!-- Card 2 -->
 <div class="col-md-4 menu-item fade-up fade-up-2">
 <div class="card">
 <img class="card-img-top" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Burger Image">
@@ -130,6 +138,7 @@ Order Now <i class="fas fa-utensils"></i>
 </div>
 </div>
 </div>
+<!-- Card 3 -->
 <div class="col-md-4 menu-item fade-up fade-up-2">
 <div class="card">
 <img class="card-img-top" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=800" alt="Grilled Stick Image">
@@ -164,5 +173,6 @@ Order Now <i class="fas fa-utensils"></i>
 <footer class="bg-dark text-white py-4 text-center">
 &copy; 2025 Delicious Restaurant. All rights reserved.
 </footer>
+
 </body>
 </html>
